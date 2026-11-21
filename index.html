@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#bfe0f5">
+<title>最后一片大陆 · The Last Continent</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23bfe0f5'/%3E%3Cpath d='M16 7l9 5-9 5-9-5z' fill='%235eb861'/%3E%3Cpath d='M7 12l9 5 9-5v4l-9 5-9-5z' fill='%23a9744f'/%3E%3Cpath d='M16 10l3 4h-2l3 4h-8l3-4h-2z' fill='%232f7d4f'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wood" viewBox="0 0 24 24"><rect x="2.5" y="8.5" width="14" height="7" rx="3.5"/><ellipse cx="17" cy="12" rx="3.4" ry="3.5"/><ellipse cx="17" cy="12" rx="1.3" ry="1.6"/></symbol>
+    <symbol id="i-stone" viewBox="0 0 24 24"><path d="M5 17l-1.5-5.5L8 6l7-1 5.5 4.5L19 17l-6.5 3z"/><path d="M8 6l3 5.5 6.5-1M11 11.5L9.5 20"/></symbol>
+    <symbol id="i-energy" viewBox="0 0 24 24"><path d="M13 2L5 13.5h5L9 22l8-11.5h-5z"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 3l5 7h-3l4.5 6.5h-13L10 10H7z"/><path d="M12 16.5V21"/></symbol>
+    <symbol id="i-water" viewBox="0 0 24 24"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/><path d="M10 20v-6h4v6"/></symbol>
+    <symbol id="i-windmill" viewBox="0 0 24 24"><path d="M10 21l1-9h2l1 9"/><circle cx="12" cy="9" r="1.3"/><path d="M12 9L7.5 4.5M12 9l4.5-4.5M12 9l-4.5 4.5M12 9l4.5 4.5"/></symbol>
+    <symbol id="i-spring" viewBox="0 0 24 24"><path d="M12 3.5s4 4.6 4 7.6a4 4 0 0 1-8 0c0-3 4-7.6 4-7.6z"/><path d="M3.5 19c2-1.4 4-1.4 6 0s4 1.4 6 0 3-1 5 0"/></symbol>
+    <symbol id="i-lifetree" viewBox="0 0 24 24"><path d="M11 4l4.5 6.5H13L17 16H5l4-5.5H6.5z"/><path d="M11 16v4"/><path d="M19 2.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-mist" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .6-8 5.5 5.5 0 0 0-10.7 1.2A3.5 3.5 0 0 0 7 18z"/></symbol>
+    <symbol id="i-ore" viewBox="0 0 24 24"><path d="M4 17l1-6 5-3.5 6 1L20 13l-2 6z"/><path d="M12 7.5l2.2 3.2-2.2 3.3-2.2-3.3z"/></symbol>
+    <symbol id="i-ruins" viewBox="0 0 24 24"><path d="M3.5 21h17M6 21V9M10 21V9M4.5 9h7M5 5.5h6L10 9H6zM15 21v-6M19 21v-8M13.5 15h7M14 12h6"/></symbol>
+    <symbol id="i-crystal" viewBox="0 0 24 24"><path d="M12 2l6.5 6.5L12 22 5.5 8.5z"/><path d="M5.5 8.5h13M12 2l-2.2 6.5L12 22l2.2-13.5z"/></symbol>
+    <symbol id="i-rule" viewBox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C10 4 4 10 4 18c0 1 .2 1.8.5 2.5C12 20 20 14 20 4z"/><path d="M4.5 20.5C8 14 12 10 17 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-sound-on" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5z"/><path d="M16 9.5a3.5 3.5 0 0 1 0 5M18.5 7a7 7 0 0 1 0 10"/></symbol>
+    <symbol id="i-sound-off" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5z"/><path d="M16.5 9.5l5 5M21.5 9.5l-5 5"/></symbol>
+    <symbol id="i-restart" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 1 1 3.4 2.3c-.8.4-1 1-1 1.8"/><circle cx="12" cy="16.8" r=".7" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-speed" viewBox="0 0 24 24"><path d="M4 6l8 6-8 6zM13 6l8 6-8 6z"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.8 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 3 1.2-6.1L3 9.6l6.3-.8z"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5l5-5"/><path d="M10.5 6.5l1-1a4 4 0 0 1 5.7 5.7l-1 1M13.5 17.5l-1 1a4 4 0 0 1-5.7-5.7l1-1"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h13l-3.2-3.2M20 16H7l3.2 3.2"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14M9.5 7V5h5v2M7 7l1 13h8l1-13M10.5 11v5.5M13.5 11v5.5"/></symbol>
+    <symbol id="i-pick" viewBox="0 0 24 24"><path d="M4 20L14 10"/><path d="M13.5 10.5l-2-2c2.5-4 7.5-5.5 10.5-3.5-2.5.3-4.5 1.3-6 3l-2.5 2.5z"/></symbol>
+    <symbol id="i-axe" viewBox="0 0 24 24"><path d="M4 20L14 10"/><path d="M14 10l-3-3 1.8-4.2c3.2 1 5.4 3.2 6.4 6.4L15 11z"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v6a4 4 0 0 1-8 0z"/><path d="M8 5H5v1.5a3 3 0 0 0 3 3M16 5h3v1.5a3 3 0 0 1-3 3M12 14v4M9 20h6"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-8"/><path d="M12 13c0-4 3-7 8-7 0 5-3 7-8 7z"/><path d="M12 13c0-3-2.5-5-6-5 0 4 2.5 5 6 5z"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h12l-2.5 4L17 12H5"/></symbol>
+    <symbol id="i-build" viewBox="0 0 24 24"><path d="M14.5 3.5l6 6-2.5 2.5-6-6z"/><path d="M12 6L3.5 14.5l3 3L15 9"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M7 3h10l4 6-9 12L3 9z"/><path d="M3 9h18M9.5 9L12 21 14.5 9M7 3l2.5 6L12 3l2.5 6L17 3"/></symbol>
+  </defs>
+</svg>
+
+<canvas id="world"></canvas>
+<div id="vignette" aria-hidden="true"></div>
+
+<header id="topbar">
+  <div class="brand">
+    <svg class="brand-ico"><use href="#i-leaf"/></svg>
+    <div class="brand-txt"><b>最后一片大陆</b><span>THE LAST CONTINENT</span></div>
+  </div>
+
+  <div id="resources">
+    <div class="res res-wood" id="res-wood" title="木材">
+      <svg><use href="#i-wood"/></svg><span class="val">0</span><span class="delta"></span>
+    </div>
+    <div class="res res-stone" id="res-stone" title="石料">
+      <svg><use href="#i-stone"/></svg><span class="val">0</span><span class="delta"></span>
+    </div>
+    <div class="res res-energy" id="res-energy" title="能量">
+      <svg><use href="#i-energy"/></svg><span class="val">0</span><span class="delta"></span>
+    </div>
+  </div>
+
+  <div class="top-right">
+    <div class="timer" id="timer" title="本局用时"><svg><use href="#i-clock"/></svg><span>00:00</span></div>
+    <button class="tbtn" id="btn-speed" title="游戏速度"><svg><use href="#i-speed"/></svg><span class="spd">1×</span></button>
+    <button class="tbtn" id="btn-sound" title="声音开关"><svg><use href="#i-sound-on"/></svg></button>
+    <button class="tbtn" id="btn-help" title="玩法说明"><svg><use href="#i-help"/></svg></button>
+    <button class="tbtn tbtn-warn" id="btn-restart" title="重新开始"><svg><use href="#i-restart"/></svg></button>
+  </div>
+</header>
+
+<div id="restart-pop" class="hidden">
+  <span>重新开始本局？</span>
+  <button id="restart-yes">重开</button>
+  <button id="restart-no">取消</button>
+</div>
+
+<aside id="tasks-panel" class="panel">
+  <div class="panel-head">
+    <h2><svg><use href="#i-flag"/></svg>本局目标</h2>
+    <span class="count" id="task-count">0/5</span>
+    <button class="panel-close" data-close="tasks-panel"><svg><use href="#i-close"/></svg></button>
+  </div>
+  <ul id="task-list"></ul>
+  <div id="eco">
+    <div class="eco-head"><span><svg><use href="#i-leaf"/></svg>生态等级</span><b id="eco-lv">Lv.1</b></div>
+    <div class="eco-bar"><div id="eco-fill"></div><div class="eco-pips"><i></i><i></i><i></i><i></i></div></div>
+    <div class="eco-score" id="eco-score">0 / 10</div>
+  </div>
+</aside>
+
+<aside id="rules-panel" class="panel">
+  <div class="panel-head">
+    <h2><svg><use href="#i-rule"/></svg>世界规则</h2>
+    <span class="count" id="rule-count">0/3</span>
+    <button class="panel-close" data-close="rules-panel"><svg><use href="#i-close"/></svg></button>
+  </div>
+  <div id="rule-list"></div>
+  <p class="panel-hint">激活规则，改写世界的运转方式</p>
+</aside>
+
+<button id="chip-tasks" class="mchip"><svg><use href="#i-flag"/></svg><span>目标 <b>0/5</b></span></button>
+<button id="chip-rules" class="mchip"><svg><use href="#i-rule"/></svg><span>规则 <b>0/3</b></span></button>
+
+<div id="inspector" class="hidden">
+  <div class="insp-icon" id="insp-icon"><svg><use href="#i-mist"/></svg></div>
+  <div class="insp-info">
+    <b id="insp-name">未知迷雾</b>
+    <span id="insp-desc">点击探索</span>
+  </div>
+  <div class="insp-actions" id="insp-actions"></div>
+  <button class="insp-close" id="insp-close" title="关闭"><svg><use href="#i-close"/></svg></button>
+</div>
+
+<div id="toasts" aria-live="polite"></div>
+
+<div id="guide" class="hidden">
+  <div class="g-scrim" id="g-top"></div>
+  <div class="g-scrim" id="g-bottom"></div>
+  <div class="g-scrim" id="g-left"></div>
+  <div class="g-scrim" id="g-right"></div>
+  <div class="g-ring" id="g-ring"></div>
+  <div class="g-card" id="g-card">
+    <div class="g-head">
+      <span class="g-step" id="g-step">1/5</span>
+      <b class="g-title" id="g-title">探索迷雾</b>
+      <button class="g-skip" id="guide-skip">跳过</button>
+    </div>
+    <p class="g-text" id="g-text"></p>
+    <button class="g-next primary-btn hidden" id="guide-next"><span>明白了，开始游玩</span></button>
+  </div>
+</div>
+
+<div id="intro" class="overlay">
+  <div class="intro-card">
+    <div class="intro-kicker">THE LAST CONTINENT</div>
+    <h1>最后一片大陆</h1>
+    <p class="intro-lead">世界正在消失。曾经广阔的大陆化为虚无，<br>只剩这座浮空孤岛，等待被你唤醒。</p>
+    <div class="intro-steps">
+      <div class="step"><div class="step-ico s-mist"><svg><use href="#i-compass"/></svg></div><b>探索</b><span>点击迷雾，解锁地块</span></div>
+      <div class="step"><div class="step-ico s-build"><svg><use href="#i-build"/></svg></div><b>创造</b><span>点击土地，种植建造</span></div>
+      <div class="step"><div class="step-ico s-rule"><svg><use href="#i-rule"/></svg></div><b>改写</b><span>激活规则，改变世界</span></div>
+    </div>
+    <div class="intro-goal"><svg><use href="#i-flag"/></svg><span id="intro-goal-txt">完成 5 项复苏任务，让生态达到 Lv.3</span></div>
+    <button id="btn-start" class="primary-btn"><svg><use href="#i-sprout"/></svg><span>开始唤醒</span></button>
+    <div class="intro-tip">鼠标点击即可游玩 · 每局约 3~5 分钟</div>
+  </div>
+</div>
+
+<div id="help" class="overlay hidden">
+  <div class="intro-card help-card">
+    <h1 class="help-title">玩法说明</h1>
+    <div class="help-rows">
+      <div class="hrow"><svg class="h-ico"><use href="#i-compass"/></svg><div><b>探索迷雾</b><span>点击金色发光的迷雾地块，消耗能量解锁。可能发现森林、水源、矿脉、遗迹与源晶。</span></div></div>
+      <div class="hrow"><svg class="h-ico"><use href="#i-build"/></svg><div><b>种植与建造</b><span>点击空地选择建筑。树木产木、风车产能、房屋助产、泉眼滋养土地。</span></div></div>
+      <div class="hrow"><svg class="h-ico"><use href="#i-sprout"/></svg><div><b>世界会自己生长</b><span>树木成熟后向空地蔓延，水源润泽周边，建筑彼此加成。</span></div></div>
+      <div class="hrow"><svg class="h-ico"><use href="#i-rule"/></svg><div><b>改写规则</b><span>激活规则卡，让世界按你的方式运转。规则可以叠加组合。</span></div></div>
+      <div class="hrow"><svg class="h-ico"><use href="#i-trophy"/></svg><div><b>完成目标</b><span>达成全部任务即复苏大陆。没有严厉惩罚，随时可以调整策略。</span></div></div>
+    </div>
+    <div class="help-btns">
+      <button id="btn-reguide" class="ghost-btn"><span>重玩引导</span></button>
+      <button id="btn-help-close" class="primary-btn"><span>继续探索</span></button>
+    </div>
+  </div>
+</div>
+
+<div id="settle" class="overlay hidden">
+  <div class="settle-card">
+    <div class="settle-badge"><svg><use href="#i-lifetree"/></svg></div>
+    <div class="settle-kicker">CONTINENT RESTORED</div>
+    <h1>大陆复苏</h1>
+    <p class="settle-sub">这片孤岛，因你的每一次选择而重新呼吸。</p>
+    <div class="settle-eco"><svg><use href="#i-leaf"/></svg><span id="settle-eco-txt">生态等级 Lv.3</span></div>
+    <div class="settle-stats" id="settle-stats"></div>
+    <div class="settle-disc-wrap">
+      <div class="settle-disc-title"><svg><use href="#i-star"/></svg>本局发现</div>
+      <div class="settle-disc" id="settle-disc"></div>
+    </div>
+    <div class="settle-best" id="settle-best"></div>
+    <div class="settle-btns">
+      <button id="btn-again" class="primary-btn"><svg><use href="#i-restart"/></svg><span>再来一局</span></button>
+      <button id="btn-continue" class="ghost-btn"><span>继续建设</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/render.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

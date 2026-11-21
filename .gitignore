@@ -1,0 +1,4 @@
+.preview/
+dist/
+test/
+*.qoder.site
